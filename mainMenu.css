@@ -23,15 +23,65 @@ hr {
 }
 
 .gridLeft {
-    width: 50%;
+    width: 49.5%;
     height: 50%;
     float: left;
-    background-color: red;
+    /*background-color: red;*/
 }
 
 .gridRight {
-    width: 50%;
+    width: 49.5%;
     height: 50%;
     float: right;
-    background-color: blue;
+    /*background-color: blue;*/
+}
+
+.projectCard {
+    background: #1d1d1d;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    align-items: center;
+    text-align: center;
+}
+
+.projectCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.projectTitle {
+    color: seagreen;
+    font-size: 1.2rem;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.projectDescription {
+    font-size: 0.95rem;
+    color: mediumseagreen;
+    margin-bottom: 12px;
+}
+
+.projectTags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.projectTags span {
+    color: mediumseagreen;
+    background: #2a2a2a;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+}
+
+.projectLink {
+    text-decoration: none;
+    color: inherit;
 }
